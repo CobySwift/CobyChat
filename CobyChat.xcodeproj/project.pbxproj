@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CB5F4C3F2889933E009E42EF /* CobyChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5F4C3E2889933E009E42EF /* CobyChatApp.swift */; };
-		CB5F4C412889933E009E42EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5F4C402889933E009E42EF /* ContentView.swift */; };
+		CB5F4C412889933E009E42EF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5F4C402889933E009E42EF /* LoginView.swift */; };
 		CB5F4C432889933F009E42EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5F4C422889933F009E42EF /* Assets.xcassets */; };
 		CB5F4C462889933F009E42EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5F4C452889933F009E42EF /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		CB5F4C3B2889933E009E42EF /* CobyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CobyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5F4C3E2889933E009E42EF /* CobyChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CobyChatApp.swift; sourceTree = "<group>"; };
-		CB5F4C402889933E009E42EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CB5F4C402889933E009E42EF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CB5F4C422889933F009E42EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB5F4C452889933F009E42EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				CB5F4C3E2889933E009E42EF /* CobyChatApp.swift */,
-				CB5F4C402889933E009E42EF /* ContentView.swift */,
+				CB5F4C402889933E009E42EF /* LoginView.swift */,
 				CB5F4C422889933F009E42EF /* Assets.xcassets */,
 				CB5F4C442889933F009E42EF /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB5F4C412889933E009E42EF /* ContentView.swift in Sources */,
+				CB5F4C412889933E009E42EF /* LoginView.swift in Sources */,
 				CB5F4C3F2889933E009E42EF /* CobyChatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
