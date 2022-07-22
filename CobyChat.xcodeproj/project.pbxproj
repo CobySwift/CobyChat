@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CB3AB464288A8C8E00AB2E86 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3AB463288A8C8E00AB2E86 /* ImagePicker.swift */; };
+		CB3AB468288AFC3F00AB2E86 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CB3AB467288AFC3F00AB2E86 /* FirebaseFirestore */; };
+		CB3AB46A288AFC3F00AB2E86 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CB3AB469288AFC3F00AB2E86 /* FirebaseStorage */; };
 		CB5F4C3F2889933E009E42EF /* CobyChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5F4C3E2889933E009E42EF /* CobyChatApp.swift */; };
 		CB5F4C412889933E009E42EF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5F4C402889933E009E42EF /* LoginView.swift */; };
 		CB5F4C432889933F009E42EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5F4C422889933F009E42EF /* Assets.xcassets */; };
@@ -35,7 +37,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBF6593F2889C54C00BFF9F0 /* FirebaseAuth in Frameworks */,
+				CB3AB46A288AFC3F00AB2E86 /* FirebaseStorage in Frameworks */,
 				CBF659412889C54C00BFF9F0 /* FirebaseStorage in Frameworks */,
+				CB3AB468288AFC3F00AB2E86 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +111,8 @@
 			packageProductDependencies = (
 				CBF6593E2889C54C00BFF9F0 /* FirebaseAuth */,
 				CBF659402889C54C00BFF9F0 /* FirebaseStorage */,
+				CB3AB467288AFC3F00AB2E86 /* FirebaseFirestore */,
+				CB3AB469288AFC3F00AB2E86 /* FirebaseStorage */,
 			);
 			productName = CobyChat;
 			productReference = CB5F4C3B2889933E009E42EF /* CobyChat.app */;
@@ -138,6 +144,7 @@
 			mainGroup = CB5F4C322889933E009E42EF;
 			packageReferences = (
 				CBF6593D2889C54C00BFF9F0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				CB3AB466288AFC3F00AB2E86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = CB5F4C3C2889933E009E42EF /* Products */;
 			projectDirPath = "";
@@ -372,6 +379,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CB3AB466288AFC3F00AB2E86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		CBF6593D2889C54C00BFF9F0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -383,6 +398,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CB3AB467288AFC3F00AB2E86 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBF6593D2889C54C00BFF9F0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		CB3AB469288AFC3F00AB2E86 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBF6593D2889C54C00BFF9F0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
 		CBF6593E2889C54C00BFF9F0 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CBF6593D2889C54C00BFF9F0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
