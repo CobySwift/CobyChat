@@ -10,6 +10,8 @@ import Firebase
 
 struct LoginView: View {
 
+    let didCompleteLoginProcess: () -> ()
+    
     @State var isLoginMode = false
     @State var email = ""
     @State var password = ""
@@ -112,12 +114,19 @@ struct LoginView: View {
             print("Successfully logged in as user: \(result?.user.uid ?? "")")
 
             self.loginStatusMessage = "Successfully logged in as user: \(result?.user.uid ?? "")"
+            
+            self.didCompleteLoginProcess()
         }
     }
 
     @State var loginStatusMessage = ""
 
     private func createNewAccount() {
+        if self.image == nil {
+            self.loginStatusMessage = "You must select an avatar image"
+            return
+        }
+        
         FirebaseManager.shared.auth.createUser(withEmail: email, password: password) { result, err in
             if let err = err {
                 print("Failed to create user:", err)
