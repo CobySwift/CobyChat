@@ -9,14 +9,14 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 class CreateNewMessageViewModel: ObservableObject {
-
+    
     @Published var users = [ChatUser]()
     @Published var errorMessage = ""
-
+    
     init() {
         fetchAllUsers()
     }
-
+    
     private func fetchAllUsers() {
         FirebaseManager.shared.firestore.collection("users")
             .getDocuments { documentsSnapshot, error in
@@ -25,14 +25,13 @@ class CreateNewMessageViewModel: ObservableObject {
                     print("Failed to fetch users: \(error)")
                     return
                 }
-
+                
                 documentsSnapshot?.documents.forEach({ snapshot in
-                    let data = snapshot.data()
-                    let user = ChatUser(data: data)
-                    if user.uid != FirebaseManager.shared.auth.currentUser?.uid {
-                        self.users.append(.init(data: data))
+                    let user = try? snapshot.data(as: ChatUser.self)
+                    if user?.uid != FirebaseManager.shared.auth.currentUser?.uid {
+                        self.users.append(user!)
                     }
-
+                    
                 })
             }
     }
@@ -41,16 +40,16 @@ class CreateNewMessageViewModel: ObservableObject {
 struct CreateNewMessageView: View {
     
     let didSelectNewUser: (ChatUser) -> ()
-
+    
     @Environment(\.presentationMode) var presentationMode
-
+    
     @ObservedObject var vm = CreateNewMessageViewModel()
-
+    
     var body: some View {
         NavigationView {
             ScrollView {
                 Text(vm.errorMessage)
-
+                
                 ForEach(vm.users) { user in
                     Button {
                         presentationMode.wrappedValue.dismiss()

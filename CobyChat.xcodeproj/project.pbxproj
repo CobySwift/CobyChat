@@ -15,15 +15,15 @@
 		CB314167288D7702001125E8 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB314166288D7702001125E8 /* ChatMessage.swift */; };
 		CB314169288D7759001125E8 /* FirebaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB314168288D7759001125E8 /* FirebaseConstants.swift */; };
 		CB31416B288D8C85001125E8 /* RecentMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31416A288D8C85001125E8 /* RecentMessage.swift */; };
+		CB314177288D99B4001125E8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CB314176288D99B4001125E8 /* FirebaseAuth */; };
+		CB314179288D99B4001125E8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CB314178288D99B4001125E8 /* FirebaseFirestore */; };
+		CB31417B288D99B4001125E8 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CB31417A288D99B4001125E8 /* FirebaseFirestoreSwift */; };
+		CB31417D288D99B4001125E8 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CB31417C288D99B4001125E8 /* FirebaseStorage */; };
 		CB3AB464288A8C8E00AB2E86 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3AB463288A8C8E00AB2E86 /* ImagePicker.swift */; };
-		CB3AB468288AFC3F00AB2E86 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CB3AB467288AFC3F00AB2E86 /* FirebaseFirestore */; };
-		CB3AB46A288AFC3F00AB2E86 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CB3AB469288AFC3F00AB2E86 /* FirebaseStorage */; };
 		CB5F4C3F2889933E009E42EF /* CobyChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5F4C3E2889933E009E42EF /* CobyChatApp.swift */; };
 		CB5F4C412889933E009E42EF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5F4C402889933E009E42EF /* LoginView.swift */; };
 		CB5F4C432889933F009E42EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5F4C422889933F009E42EF /* Assets.xcassets */; };
 		CB5F4C462889933F009E42EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5F4C452889933F009E42EF /* Preview Assets.xcassets */; };
-		CBF6593F2889C54C00BFF9F0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CBF6593E2889C54C00BFF9F0 /* FirebaseAuth */; };
-		CBF659412889C54C00BFF9F0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CBF659402889C54C00BFF9F0 /* FirebaseStorage */; };
 		CBF659432889C5DC00BFF9F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBF659422889C5DC00BFF9F0 /* GoogleService-Info.plist */; };
 		CBF659452889C68900BFF9F0 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF659442889C68900BFF9F0 /* FirebaseManager.swift */; };
 /* End PBXBuildFile section */
@@ -52,10 +52,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB31415D288CFA44001125E8 /* SDWebImageSwiftUI in Frameworks */,
-				CBF6593F2889C54C00BFF9F0 /* FirebaseAuth in Frameworks */,
-				CB3AB46A288AFC3F00AB2E86 /* FirebaseStorage in Frameworks */,
-				CBF659412889C54C00BFF9F0 /* FirebaseStorage in Frameworks */,
-				CB3AB468288AFC3F00AB2E86 /* FirebaseFirestore in Frameworks */,
+				CB314177288D99B4001125E8 /* FirebaseAuth in Frameworks */,
+				CB314179288D99B4001125E8 /* FirebaseFirestore in Frameworks */,
+				CB31417D288D99B4001125E8 /* FirebaseStorage in Frameworks */,
+				CB31417B288D99B4001125E8 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,8 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				CB314158288CF74C001125E8 /* Model */,
-				CB314155288CEB24001125E8 /* MainMessages */,
 				CB3AB465288A8EB900AB2E86 /* Utils */,
+				CB314155288CEB24001125E8 /* MainMessages */,
 				CB5F4C3E2889933E009E42EF /* CobyChatApp.swift */,
 				CB5F4C402889933E009E42EF /* LoginView.swift */,
 				CB3AB463288A8C8E00AB2E86 /* ImagePicker.swift */,
@@ -164,11 +164,11 @@
 			);
 			name = CobyChat;
 			packageProductDependencies = (
-				CBF6593E2889C54C00BFF9F0 /* FirebaseAuth */,
-				CBF659402889C54C00BFF9F0 /* FirebaseStorage */,
-				CB3AB467288AFC3F00AB2E86 /* FirebaseFirestore */,
-				CB3AB469288AFC3F00AB2E86 /* FirebaseStorage */,
 				CB31415C288CFA44001125E8 /* SDWebImageSwiftUI */,
+				CB314176288D99B4001125E8 /* FirebaseAuth */,
+				CB314178288D99B4001125E8 /* FirebaseFirestore */,
+				CB31417A288D99B4001125E8 /* FirebaseFirestoreSwift */,
+				CB31417C288D99B4001125E8 /* FirebaseStorage */,
 			);
 			productName = CobyChat;
 			productReference = CB5F4C3B2889933E009E42EF /* CobyChat.app */;
@@ -199,9 +199,8 @@
 			);
 			mainGroup = CB5F4C322889933E009E42EF;
 			packageReferences = (
-				CBF6593D2889C54C00BFF9F0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				CB3AB466288AFC3F00AB2E86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				CB31415B288CFA44001125E8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				CB314175288D99B4001125E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = CB5F4C3C2889933E009E42EF /* Products */;
 			projectDirPath = "";
@@ -451,15 +450,7 @@
 				minimumVersion = 2.0.0;
 			};
 		};
-		CB3AB466288AFC3F00AB2E86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		CBF6593D2889C54C00BFF9F0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		CB314175288D99B4001125E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
@@ -475,24 +466,24 @@
 			package = CB31415B288CFA44001125E8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
 		};
-		CB3AB467288AFC3F00AB2E86 /* FirebaseFirestore */ = {
+		CB314176288D99B4001125E8 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CBF6593D2889C54C00BFF9F0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		CB3AB469288AFC3F00AB2E86 /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CBF6593D2889C54C00BFF9F0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
-		};
-		CBF6593E2889C54C00BFF9F0 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CBF6593D2889C54C00BFF9F0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = CB314175288D99B4001125E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
-		CBF659402889C54C00BFF9F0 /* FirebaseStorage */ = {
+		CB314178288D99B4001125E8 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CBF6593D2889C54C00BFF9F0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = CB314175288D99B4001125E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		CB31417A288D99B4001125E8 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB314175288D99B4001125E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		CB31417C288D99B4001125E8 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB314175288D99B4001125E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
