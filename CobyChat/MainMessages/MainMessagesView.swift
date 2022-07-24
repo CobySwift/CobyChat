@@ -138,7 +138,7 @@ struct MainMessagesView: View {
             
             
             VStack(alignment: .leading, spacing: 4) {
-                let email = vm.chatUser?.email.replacingOccurrences(of: "@gmail.com", with: "") ?? ""
+                let email = vm.chatUser?.email.components(separatedBy: "@").first ?? ""
                 Text(email)
                     .font(.system(size: 24, weight: .bold))
                 
