@@ -10,6 +10,7 @@
 		CB314157288CEB45001125E8 /* MainMessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB314156288CEB45001125E8 /* MainMessagesView.swift */; };
 		CB31415A288CF75C001125E8 /* ChatUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB314159288CF75C001125E8 /* ChatUser.swift */; };
 		CB31415D288CFA44001125E8 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CB31415C288CFA44001125E8 /* SDWebImageSwiftUI */; };
+		CB314160288D4C6F001125E8 /* CreateNewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31415F288D4C6F001125E8 /* CreateNewMessageView.swift */; };
 		CB3AB464288A8C8E00AB2E86 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3AB463288A8C8E00AB2E86 /* ImagePicker.swift */; };
 		CB3AB468288AFC3F00AB2E86 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CB3AB467288AFC3F00AB2E86 /* FirebaseFirestore */; };
 		CB3AB46A288AFC3F00AB2E86 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CB3AB469288AFC3F00AB2E86 /* FirebaseStorage */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		CB314156288CEB45001125E8 /* MainMessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMessagesView.swift; sourceTree = "<group>"; };
 		CB314159288CF75C001125E8 /* ChatUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUser.swift; sourceTree = "<group>"; };
+		CB31415F288D4C6F001125E8 /* CreateNewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewMessageView.swift; sourceTree = "<group>"; };
 		CB3AB463288A8C8E00AB2E86 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		CB5F4C3B2889933E009E42EF /* CobyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CobyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5F4C3E2889933E009E42EF /* CobyChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CobyChatApp.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 		CB314155288CEB24001125E8 /* MainMessages */ = {
 			isa = PBXGroup;
 			children = (
+				CB31415E288D4C4B001125E8 /* NewMessage */,
 				CB314156288CEB45001125E8 /* MainMessagesView.swift */,
 			);
 			path = MainMessages;
@@ -66,6 +69,14 @@
 				CB314159288CF75C001125E8 /* ChatUser.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CB31415E288D4C4B001125E8 /* NewMessage */ = {
+			isa = PBXGroup;
+			children = (
+				CB31415F288D4C6F001125E8 /* CreateNewMessageView.swift */,
+			);
+			path = NewMessage;
 			sourceTree = "<group>";
 		};
 		CB3AB465288A8EB900AB2E86 /* Utils */ = {
@@ -203,6 +214,7 @@
 				CBF659452889C68900BFF9F0 /* FirebaseManager.swift in Sources */,
 				CB3AB464288A8C8E00AB2E86 /* ImagePicker.swift in Sources */,
 				CB5F4C412889933E009E42EF /* LoginView.swift in Sources */,
+				CB314160288D4C6F001125E8 /* CreateNewMessageView.swift in Sources */,
 				CB5F4C3F2889933E009E42EF /* CobyChatApp.swift in Sources */,
 				CB314157288CEB45001125E8 /* MainMessagesView.swift in Sources */,
 			);
